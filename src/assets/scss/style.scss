@@ -1,0 +1,155 @@
+@import 'variables';
+@import 'fonts';
+@import 'reset';
+
+html {
+    min-height: 100%;
+    background: #fff;
+    position: relative;
+
+    &.hidden {
+        overflow: hidden;
+    }
+}
+
+body {
+    position: relative;
+    font-size: $font-size;
+    font-family: $font-2;
+    font-weight: 400;
+    line-height: 1.17;
+    color: $text-color;
+    background: #F7F6F1;
+    height: 100%;
+    min-height: 100vh;
+
+    &.hidden {
+        overflow: hidden;
+    }
+}
+
+.fullHeight {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-2 {
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
+    position: relative;
+    z-index: 9;
+}
+
+.container-3 {
+    width: 100%;
+    max-width: 585px;
+    margin: auto;
+}
+
+.container-4 {
+    width: 100%;
+    max-width: 780px;
+    margin: auto;
+}
+
+@media (min-width: 1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1170px;
+    }
+}
+
+.h1 {
+    font-family: $font-2;
+    color: $green;
+    margin: 0 0 30px;
+    font-weight: bold;
+    font-size: 40px;
+
+    &.black {
+        color: $text-color;
+    }
+}
+
+.fz-12 {
+    font-size: 12px !important;
+}
+
+.fz-18 {
+    font-size: 18px !important;
+    line-height: 1.4;
+}
+
+.fz-16 {
+    font-size: 16px;
+}
+
+.green {
+    color: $green !important;
+}
+
+.title-1 {
+    color: $green;
+    font-size: 55px;
+    margin: 0 0 40px;
+    font-weight: bold;
+}
+
+.title-1-1 {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 0 30px;
+}
+
+.title-2 {
+    font-weight: bold;
+    font-size: 55px;
+    margin: 0 0 40px;
+    color: #404040;
+}
+
+.title-3 {
+    font-weight: bold;
+    font-size: 55px;
+    color: #2F2F66;
+    font-family: $font-2;
+}
+
+.title-4 {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0 0 40px;
+}
+
+.title-5 {
+    font-weight: bold;
+    font-size: 38px;
+    margin: 0 0 25px;
+}
+
+.title-6 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0 0 40px;
+}
+
+.title-7 {
+    font-size: 16px;
+    color: #C0C7D6;
+    margin: 0 0 5px;
+}
