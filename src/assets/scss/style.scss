@@ -2,6 +2,20 @@
 @import 'fonts';
 @import 'reset';
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 html {
     min-height: 100%;
     background: #fff;
