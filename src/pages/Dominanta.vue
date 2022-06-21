@@ -1,5 +1,5 @@
 <template>
-
+    <!--http://localhost:8080/dominanta Страница доминанты -->
     <div class="fullHeight">
         <div class="main-tests">
 
@@ -20,8 +20,8 @@
 
 
                                         <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="30"
-                                            class="progress-circular" style="height: 180px; width: inherit;"><svg
-                                                xmlns="http://www.w3.org/2000/svg"
+                                            class="progress-circular" style="height: 180px; width: inherit;">
+                                            <!-- <svg xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="23.529411764705884 23.529411764705884 47.05882352941177 47.05882352941177"
                                                 style="transform: rotate(360deg); ">
                                                 <circle fill="transparent" cx="47.05882352941177" cy="47.05882352941177"
@@ -32,7 +32,8 @@
                                                     r="20" stroke-width="7.058823529411765" stroke-dasharray="125.664"
                                                     stroke-dashoffset="87.96459430051421px" class="v-progress-circular">
                                                 </circle>
-                                            </svg>
+                                            </svg> -->
+                                            <circle-progressbar :stroke-dasharray="'251, 502.4'" class="custom-progbessbar" />
                                             <!-- <div class="v-progress-circular__info"> 30 </div> -->
                                         </div>
                                         <!-- <canvas height="350" width="350" style="height: 175px; width: 175px;"></canvas> -->

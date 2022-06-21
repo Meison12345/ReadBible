@@ -1,10 +1,14 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import {
+    createRouter,
+    createWebHistory
+} from 'vue-router';
 import Main from '@/pages/Main';
 import Authorization from '@/pages/Authorization';
 import Dominanta from '@/pages/Dominanta';
 import CheckRules from '@/pages/CheckRules';
-const routes = [
-    {
+import SpeedTest from '@/pages/SpeedTest';
+import LessonRules from '@/pages/LessonRules';
+const routes = [{
         path: '/',
         component: Main
     },
@@ -15,11 +19,18 @@ const routes = [
     {
         path: '/Dominanta',
         component: Dominanta
-    }
-    ,
+    },
     {
         path: '/CheckRules',
         component: CheckRules
+    },
+    {
+        path: '/speedtest',
+        component: SpeedTest
+    },
+    {
+        path: '/lessonrules',
+        component: LessonRules
     }
 ];
 

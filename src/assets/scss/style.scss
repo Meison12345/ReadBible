@@ -28,10 +28,19 @@ body {
     }
 }
 
+svg.custom-progbessbar {
+    width: 200px;
+    height: 200px;
+    transform: rotate(-90deg);
+    & circle{
+        transition: 0.7s;
+    }
+}
+
 .fullHeight {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    // min-height: 100vh;
 }
 
 .container-2 {
@@ -294,7 +303,8 @@ body {
     z-index: 999;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.02);
     background: #fff;
-    display: none;
+    overflow: hidden;
+    // display: none;
 
     ul {
         list-style: none;
@@ -1779,6 +1789,10 @@ header {
     .t-link {
         margin: 0 0 30px;
     }
+}
+
+section.section-3 div.table-programs form.ms2_form>div.table-title {
+    text-align: center;
 }
 
 .t-footer-mobile {

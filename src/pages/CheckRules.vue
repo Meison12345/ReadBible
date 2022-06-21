@@ -1,5 +1,5 @@
 <template>
-
+    <!--http://localhost:8080/checkrules Страница проверки пунктов  -->
     <div class="fullHeight">
         <div class="main-tests">
 
