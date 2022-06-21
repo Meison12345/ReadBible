@@ -74,30 +74,30 @@
 </script>
 
 <style lang="scss" scoped>
-    .auth {
-        padding:70px 0 170px;
-    }
+    // .auth {
+    //     padding:70px 0 170px;
+    // }
 
-    .auth-content {
-        &_title {
-            font-weight: 500;
-            font-size: 16px;
-            margin:0 0 40px;
-        }
-    }
-    .input-title {
-        color: #8CA1AC;
-        margin: 5px 0 15px;
-    }
-    .gender-input-radio {
-        margin: 0 0 80px;
-    }
+    // .auth-content {
+    //     &_title {
+    //         font-weight: 500;
+    //         font-size: 16px;
+    //         margin:0 0 40px;
+    //     }
+    // }
+    // .input-title {
+    //     color: #8CA1AC;
+    //     margin: 5px 0 15px;
+    // }
+    // .gender-input-radio {
+    //     margin: 0 0 80px;
+    // }
 
-    .profile-form {
-        max-width: 555px;
-    }
-    .padding-r {
-        padding-left: 65px;
-    }
+    // .profile-form {
+    //     max-width: 555px;
+    // }
+    // .padding-r {
+    //     padding-left: 65px;
+    // }
 
 </style>

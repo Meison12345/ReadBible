@@ -1,5 +1,4 @@
 <template>
-    <Header />
 
     <div class="fullHeight">
         <div class="main-tests">
@@ -68,7 +67,6 @@
         </div>
     </div>
 
-    <Footer />
 </template>
 
 <!-- <script>
@@ -80,12 +78,8 @@ export default {
 }
 </script> -->
 <script>
-import Header from '@/components/Header.vue'
-import Footer from '@/components/Footer.vue'
 export default {
-    components: {
-        Header, Footer
-    }
+
 };
 </script>
 <style scoped lang="scss">
