@@ -5,9 +5,9 @@
                 <div class="row align-items-center">
                     <div class="col-xl-5 col-5">
                         <div class="logo">
-                            <div class="logo-img">
-                                <img src="../assets/images/svg/logo-new.svg" alt="">
-                            </div>
+                            <a href="/" class="logo-img">
+                                <img src="../assets/images/svg/logo-new.svg" alt="Школа Андреева">
+                            </a>
                         </div>
                     </div>
                     <div class="col-xl-7  col-7 align-items-center">

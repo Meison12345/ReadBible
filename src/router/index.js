@@ -8,29 +8,40 @@ import Dominanta from '@/pages/Dominanta';
 import CheckRules from '@/pages/CheckRules';
 import SpeedTest from '@/pages/SpeedTest';
 import LessonRules from '@/pages/LessonRules';
+import ResultFreeTest from '@/pages/ResultFreeTest';
+import SendTeacher from '@/pages/SendTeacher';
+
 const routes = [{
         path: '/',
         component: Main
     },
     {
-        path: '/authorization',
+        path: '/authorization', //Авторизация
         component: Authorization
     },
     {
-        path: '/Dominanta',
+        path: '/dominanta', //КУРС - Оглавление
         component: Dominanta
     },
     {
-        path: '/CheckRules',
+        path: '/checkrules', //online/indom/rules/letsgo/
         component: CheckRules
     },
     {
-        path: '/speedtest',
+        path: '/speedtest', //Страница Перед тестированием
         component: SpeedTest
     },
     {
-        path: '/lessonrules',
+        path: '/lessonrules', //Правила занятий
         component: LessonRules
+    },
+    {
+        path: '/resultfreetest', //Результат бесплатного тестирования
+        component: ResultFreeTest
+    },
+    {
+        path: '/sendteacher', //Отправить сообщение преподавателю
+        component: SendTeacher
     }
 ];
 

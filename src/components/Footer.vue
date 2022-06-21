@@ -5,13 +5,9 @@
                 <div class="row">
                     <div class="col-xl-6 col-md-6">
                         <div class="logo">
-                            <div class="logo-img">
-                                <img src="../assets/images/svg/logo-small.svg" alt="">
-                            </div>
-                            <div class="logo-desc">
-                                <div class="logo-desc-head">Школа быстрого чтения Олега Андреева</div>
-                                <div class="mobile-hidden">Доверьтесь методике, развиваемой с 1970 года</div>
-                            </div>
+                            <a href="/" class="logo-img" data-v-61dd7a3d="">
+                                <img src="/img/logo-new.c2381ef3.svg" alt="Школа Андреева" data-v-61dd7a3d="">
+                            </a>
                         </div>
 
                         <!--mobile-block---------------------------------------->

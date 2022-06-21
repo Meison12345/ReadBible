@@ -28,11 +28,17 @@ body {
     }
 }
 
+.progress-circular {
+    height: 200px;
+    width: auto;
+}
+
 svg.custom-progbessbar {
     width: 200px;
     height: 200px;
     transform: rotate(-90deg);
-    & circle{
+
+    & circle {
         transition: 0.7s;
     }
 }
@@ -1383,6 +1389,7 @@ header {
         top: 0;
         right: 0;
         bottom: 0;
+        padding: 51px 0px 38px 6px;
     }
 
     img {
@@ -1446,7 +1453,7 @@ header {
 }
 
 .wrap-quote {
-    max-width: 770px;
+    max-width: 775px;
     padding: 0 180px 0 0;
 
     .quote {
