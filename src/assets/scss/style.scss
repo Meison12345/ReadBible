@@ -12,6 +12,12 @@ html {
     }
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     position: relative;
     font-size: $font-size;
@@ -33,7 +39,8 @@ body {
     width: auto;
 }
 
-svg.custom-progbessbar {
+
+svg.custom-progressbar-circle {
     width: 200px;
     height: 200px;
     transform: rotate(-90deg);
@@ -1389,7 +1396,7 @@ header {
         top: 0;
         right: 0;
         bottom: 0;
-        padding: 51px 0px 38px 6px;
+        padding: 51px 0px 38px 7px;
     }
 
     img {

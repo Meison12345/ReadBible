@@ -31,16 +31,17 @@
                                             <span class="deleteValue-icon active"></span>
                                         </label> -->
                                         <input-wide :title="'Email'" :maxLength="'50'" :required="true"
-                                            :deleteButton="true" v-model="emailName" />
+                                            :deleteButton="true" v-model="emailUser" />
                                     </div>
                                 </div>
                                 <div class="profile-form-row">
                                     <div class="wrap-textarea-2">
-                                        <div class="wrap-input">
+                                        <!--<div class="wrap-input">
                                             <textarea class="input" placeholder="Введите своё сообщение"></textarea>
-                                            <!-- <div class="label">Введите своё сообщение</div> -->
+                                             <div class="label">Введите своё сообщение</div> 
+                                            </div> -->
 
-                                        </div>
+                                        <text-field />
 
                                         <div class="wrap-input-file">
                                             <input type="file" name="file" id="file" class="input-file">
@@ -63,7 +64,7 @@
 
                                 <div class="profile-form-row">
                                     <!-- <input type="submit" class="btn-1" value="Отправить"> -->
-                                    <link-main class="btn-1" />
+                                    <link-main class="btn-1" @click.prevent="checkForm" />
 
                                 </div>
                             </div>
@@ -78,6 +79,22 @@
 <script>
 export default {
     name: 'result-block',
+    data() {
+
+        return {
+            userName: '',
+            emailUser: '',
+        }
+    },
+    methods: {
+        checkForm: function () {
+            const regEmail = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/gmi;
+            if (regEmail.test(this.emailUser) && this.userName.length > 2) {
+                console.log('Всё верно');
+            }
+
+        },
+    },
     props: {
         modelValue: {
             type: String,
@@ -97,7 +114,7 @@ export default {
             type: Number,
             default: 0.1,
         },
-    }
+    },
 }
 </script>
 

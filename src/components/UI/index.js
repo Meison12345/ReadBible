@@ -5,6 +5,9 @@ import linkMain from '@/components/UI/linkMain';
 import buttonPrice from '@/components/UI/buttonPrice';
 import circleProgressbar from '@/components/UI/circleProgressbar';
 import leftBlockResultSpeedTest from '@/components/UI/leftBlockResultSpeedTest';
+import textField from '@/components/UI/textField';
+import lessonsBlock from '@/components/UI/lessonsBlock';
+
 
 export default [
     inputWide,
@@ -13,5 +16,7 @@ export default [
     linkMain,
     buttonPrice,
     circleProgressbar,
-    leftBlockResultSpeedTest
+    leftBlockResultSpeedTest,
+    textField,
+    lessonsBlock
 ];

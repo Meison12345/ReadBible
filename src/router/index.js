@@ -13,7 +13,7 @@ import SendTeacher from '@/pages/SendTeacher';
 
 const routes = [{
         path: '/',
-        component: Main
+        component: Main // Главная страница
     },
     {
         path: '/authorization', //Авторизация

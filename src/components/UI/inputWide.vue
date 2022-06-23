@@ -49,9 +49,6 @@ export default {
             }, 100)
             this.inputValue = '';
         },
-        // checkEmail: function () {
-        //     console.log(this.$el);
-        // }
     },
     data() {
         return {
