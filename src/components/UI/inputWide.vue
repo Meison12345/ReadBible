@@ -1,8 +1,13 @@
 <template>
     <div class="wrap-input deleteValue" @click="inputClick">
         <label>
-            <input type="text" required="" :class="'input ' + classes" :maxlength="maxLength" @focus="isFocused = true"
-                @blur="isFocused = false" @input="changeValue" v-model="inputValue">
+            <input type="text" required="" 
+            :class="'input ' + classes" 
+            :maxlength="maxLength"
+            @focus="isFocused = true"
+            @blur="isFocused = false"
+            @input="changeValue" 
+            v-model="inputValue">
             <div class="label">{{ title }}<span v-if="required"> *</span></div>
             <span class="deleteValue-icon active" v-if="deleteButton && (inputValue ?? '') != ''"
                 @click="clearInput"></span>

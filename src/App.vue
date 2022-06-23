@@ -1,9 +1,9 @@
 <template>
+    <Header />
     <div class="fullHeight">
-        <Header />
         <router-view />
-        <Footer />
     </div>
+    <Footer />
 </template>
 
 <script>

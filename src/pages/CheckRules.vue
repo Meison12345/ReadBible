@@ -28,7 +28,7 @@
                                 <div class="title-3 text-center">Проверьте каждый пункт и поставьте галочки, прежде чем
                                     начать занятия:</div>
                                 <form action="#">
-                                    <div class="checkbox-list">
+                                    <!-- <div class="checkbox-list">
                                         <label class="checkbox">
                                             <input type="checkbox">
                                             <span class="checkbox-icon"></span>
@@ -53,7 +53,8 @@
                                     </div>
                                     <div class="wrap-submit text-center">
                                         <input type="submit" class="submit-2" value="Начать занятия" disabled="">
-                                    </div>
+                                    </div> -->
+                                    <checkbox-rules/>
                                 </form>
                             </div>
                         </div>

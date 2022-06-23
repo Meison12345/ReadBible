@@ -13,10 +13,10 @@ import SendTeacher from '@/pages/SendTeacher';
 
 const routes = [{
         path: '/',
-        component: Main // Главная страница
+        component: Main // Главная страница - Сделана
     },
     {
-        path: '/authorization', //Авторизация
+        path: '/authorization', //Авторизация - Сделана
         component: Authorization
     },
     {
@@ -24,7 +24,7 @@ const routes = [{
         component: Dominanta
     },
     {
-        path: '/checkrules', //online/indom/rules/letsgo/
+        path: '/checkrules', //online/indom/rules/letsgo/ - Сделана
         component: CheckRules
     },
     {
@@ -32,11 +32,11 @@ const routes = [{
         component: SpeedTest
     },
     {
-        path: '/lessonrules', //Правила занятий
+        path: '/lessonrules', //Правила занятий - Сделана
         component: LessonRules
     },
     {
-        path: '/resultfreetest', //Результат бесплатного тестирования
+        path: '/resultfreetest', //Результат бесплатного тестирования - Сделана
         component: ResultFreeTest
     },
     {

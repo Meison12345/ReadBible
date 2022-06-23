@@ -7,6 +7,7 @@ import circleProgressbar from '@/components/UI/circleProgressbar';
 import leftBlockResultSpeedTest from '@/components/UI/leftBlockResultSpeedTest';
 import textField from '@/components/UI/textField';
 import lessonsBlock from '@/components/UI/lessonsBlock';
+import checkboxRules from '@/components/UI/checkboxRules';
 
 
 export default [
@@ -18,5 +19,6 @@ export default [
     circleProgressbar,
     leftBlockResultSpeedTest,
     textField,
-    lessonsBlock
+    lessonsBlock,
+    checkboxRules,
 ];
