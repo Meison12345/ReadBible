@@ -13,7 +13,7 @@
                 <ul>
                     <li class="active" v-for="el in lesson" :key="el">
                         <a href="#">
-                            <span class="count-list">{{1.1}}</span>{{ el }}
+                            <span class="count-list"></span>{{ el }}
                         </a>
                     </li>
                 </ul>
