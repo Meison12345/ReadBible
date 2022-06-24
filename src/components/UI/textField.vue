@@ -3,7 +3,8 @@
     <div class="wrap-input">
         <textarea class="input" @focus="isFocused = true" @blur="isFocused = false" @input="changeValue"
             v-model="inputValue"></textarea>
-        <div class="label" :class="{ 'active': isActive }">Введите своё сообщение</div>
+        <div class="label custom-label" :class="{ 'active': isActive }">Введите своё сообщение
+        </div>
     </div>
 
     <div class="wrap-input-file">
@@ -40,11 +41,14 @@ export default {
         }
     },
     methods: {
+        //Проверка входного файла
         onFileUpload(e) {
-            this.fileName = e.target.files[0].name;
-            const elemSize = e.target.files[0].size;
-            let fullName = this.fileName.split('.');
+            const file = e.target.files[0];
+            const fileName = file.name.split('.');
             let expansion = '';
+            fileName.length > 1 ? expansion = fileName.pop() : null;
+            const fileSize = file.size;
+
             const expansionMas = [
                 'jpg', 'jpg', 'png', 'webp', 'svg', 'bmp',
                 'pdf',
@@ -52,14 +56,10 @@ export default {
                 'xls', 'xlt', 'xlm', 'xlsx', 'xlsm', 'xltx', 'xltm', 'xlsb', 'xlt', 'xps',
                 'mp3',
             ];
-            if (fullName.length > 1) {
-                expansion = fullName.pop();
-            }
-            for (const el of expansionMas) {
-                if (expansion === el && elemSize <= 10000000) {
 
-                    console.log(el);
-                    console.log(expansion, elemSize + 'б');
+            for (const el of expansionMas) {
+                if (expansion === el && fileSize <= 10000000) {
+                    this.fileName = file.name;
                 } else {
                     e.preventDefault();
                 }
@@ -69,10 +69,13 @@ export default {
         changeValue(event) {
             this.$emit('update:modelValue', event.currentTarget.value);
         },
+        changeClass() {
+            console.log(123);
+        }
     },
     watch: {
         'isFocused': function (value) {
-            console.log(this.inputValue.trim().length);
+            // console.log(this.$el.parentNode.querySelector('.wrap-input div.label'));
             if (value)
                 this.isActive = true;
             else if (!value && this.inputValue == '')
@@ -80,10 +83,24 @@ export default {
             if (this.inputValue.trim().length > 0) {
                 this.isActive = true;
             }
+            // 'isFocused': function (value) {
+            // if (value)
+            //     this.$el.parentNode.querySelector('.wrap-input div.label').classList.add('active');
+            // else if (!value && this.inputValue == '')
+            //     this.$el.parentNode.querySelector('.wrap-input div.label').classList.remove('active');
+            // }
         },
     },
 }
 </script>
 
 <style lang="scss" scoped>
+// .custom-label:hover {
+//     pointer-events: none;
+//       cursor: pointer;
+// }
+
+.custom-label {
+    cursor: pointer;
+}
 </style>

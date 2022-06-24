@@ -1,5 +1,5 @@
 <template>
-    <!--http://localhost:8080/authorization Страница авторизации  -->
+    <!--Страница авторизации  -->
     <section class="auth">
         <div class="container">
             <div class="row">

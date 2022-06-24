@@ -6,7 +6,6 @@
         <div>
             <div class="lesson-accordion_item__head collapsed" @click="openDetails($event)">
                 {{ lesson.title }}
-
             </div>
         </div>
         <div v-show="show">
@@ -14,13 +13,19 @@
                 <ul>
                     <li class="active" v-for="el in lesson" :key="el">
                         <a href="#">
-                            <span class="count-list"></span>{{ el }}
+                            <span class="count-list">{{1.1}}</span>{{ el }}
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
+
+    <!-- <input-radio :options="[
+        { name: 'Введение', id: 'man', isChecked: false },
+        { name: 'Женщина', id: 'wooman', isChecked: false },
+        { name: 'Не указан', id: 'other', isChecked: true }
+    ]" :radioName="'gender'" :flexDirection="'row'" /> -->
 </template>
 
 <script>
