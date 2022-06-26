@@ -10,6 +10,8 @@ import SpeedTest from '@/pages/SpeedTest';
 import LessonRules from '@/pages/LessonRules';
 import ResultFreeTest from '@/pages/ResultFreeTest';
 import SendTeacher from '@/pages/SendTeacher';
+import CoursePayment from '@/pages/CoursePayment';
+import AutogenTraning from '@/pages/AutogenTraning';
 
 const routes = [{
         path: '/',
@@ -42,6 +44,14 @@ const routes = [{
     {
         path: '/sendteacher', //Отправить сообщение преподавателю
         component: SendTeacher
+    },
+    {
+        path: '/coursepayment', //Отправить сообщение преподавателю
+        component: CoursePayment
+    },
+    {
+        path: '/autogentraning', //Страница аутогенной тренировки
+        component: AutogenTraning
     }
 ];
 

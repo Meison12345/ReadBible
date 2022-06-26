@@ -1,6 +1,5 @@
 <template>
     <!--http://localhost:8080/dominanta Страница доминанты -->
-    <div class="fullHeight">
         <div class="main-tests">
 
             <section class="section-5">
@@ -422,8 +421,6 @@
 
 
         </div>
-    </div>
-
 </template>
 
 <!-- <script>

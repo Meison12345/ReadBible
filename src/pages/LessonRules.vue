@@ -1,6 +1,5 @@
 <template>
     <!--http://localhost:8080/lessonrules страница с правилами занятия  -->
-    <div class="fullHeight">
         <div class="main-tests">
 
             <section class="section-5 with-toBack">
@@ -138,7 +137,6 @@
 
 
         </div>
-    </div>
 </template>
 
 <!-- <script>

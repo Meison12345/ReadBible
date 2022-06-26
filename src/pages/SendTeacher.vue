@@ -31,8 +31,7 @@
                                 </div>
 
                                 <div class="profile-form-row">
-                                    <link-main class="btn-1" @click.prevent="checkForm" />
-
+                                    <link-main class="btn-1" :text="'Отправить'" @click.prevent="checkForm" />
                                 </div>
                             </div>
                         </form>
@@ -94,17 +93,6 @@ export default {
         text: {
             type: Number,
             default: 0,
-        },
-        minute: {
-            type: Number,
-            default: 0,
-        }, second: {
-            type: Number,
-            default: 0,
-        },
-        koef: {
-            type: Number,
-            default: 0.1,
         },
     },
 }

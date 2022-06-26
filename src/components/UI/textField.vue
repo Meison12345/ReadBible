@@ -1,9 +1,9 @@
 <!--Textarea на странице "Написать преподавателю" -->
 <template>
     <div class="wrap-input">
-        <textarea class="input" @focus="isFocused = true" @blur="isFocused = false" @input="changeValue"
-            v-model="inputValue"></textarea>
-        <div class="label custom-label" :class="{ 'active': isActive }">Введите своё сообщение
+        <textarea class="input" title="Заполните это поле" @focus="isFocused = true" @blur="isFocused = false"
+            @input="changeValue" v-model="inputValue"></textarea>
+        <div class="label custom-label" :class="{ 'active': isActive }" @click="changePosition">Введите своё сообщение
         </div>
     </div>
 
@@ -69,8 +69,9 @@ export default {
         changeValue(event) {
             this.$emit('update:modelValue', event.currentTarget.value);
         },
-        changeClass() {
+        changePosition() {
             console.log(123);
+            document.querySelector('textarea').focus()
         }
     },
     watch: {

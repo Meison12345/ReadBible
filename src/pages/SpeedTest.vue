@@ -1,5 +1,5 @@
 <template>
-    <!--http://localhost:8080/speedtest Страница с предложением пройте тест -->
+    <!-- Страница с предложением пройте тест -->
     <div class="main-tests">
         <section class="section">
             <div class="container-3">

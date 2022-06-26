@@ -14,7 +14,7 @@
 
                         <div class="profile-form-row">
                             <input-wide :title="'Ваш телефон'" :required="true" :deleteButton="true"
-                                :classes="'phone-mask'" :flexDirection="'row'" v-model="userPhone" />
+                                :classes="'phone-mask'" :flexDirection="'row'" v-model="userPhone"/>
                         </div>
 
                         <div class="profile-form-row">
@@ -50,7 +50,7 @@ export default {
         return {
             userName: '',
             userPhone: '',
-            buttonNextDisabled: true
+            buttonNextDisabled: true,
         }
     }
 };
