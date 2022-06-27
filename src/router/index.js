@@ -12,6 +12,9 @@ import ResultFreeTest from '@/pages/ResultFreeTest';
 import SendTeacher from '@/pages/SendTeacher';
 import CoursePayment from '@/pages/CoursePayment';
 import AutogenTraning from '@/pages/AutogenTraning';
+import FreeTesting from '@/pages/FreeTesting';
+import ReadingСontrolText from '@/pages/ReadingСontrolText';
+import QuestionsAboutText from '@/pages/QuestionsAboutText';
 
 const routes = [{
         path: '/',
@@ -23,35 +26,47 @@ const routes = [{
     },
     {
         path: '/dominanta', //КУРС - Оглавление
-        component: Dominanta
+        component: Dominanta,
     },
     {
         path: '/checkrules', //online/indom/rules/letsgo/ - Сделана
-        component: CheckRules
+        component: CheckRules,
     },
     {
-        path: '/speedtest', //Страница Перед тестированием
-        component: SpeedTest
+        path: '/speedtest', //Страница Перед тестированием - Попробовать сделать через слоты
+        component: SpeedTest,
     },
     {
         path: '/lessonrules', //Правила занятий - Сделана
-        component: LessonRules
+        component: LessonRules,
     },
     {
         path: '/resultfreetest', //Результат бесплатного тестирования - Сделана
-        component: ResultFreeTest
+        component: ResultFreeTest,
     },
     {
         path: '/sendteacher', //Отправить сообщение преподавателю
-        component: SendTeacher
+        component: SendTeacher,
     },
     {
-        path: '/coursepayment', //Отправить сообщение преподавателю
-        component: CoursePayment
+        path: '/coursepayment', //Отправить оплаты курса
+        component: CoursePayment,
     },
     {
-        path: '/autogentraning', //Страница аутогенной тренировки
-        component: AutogenTraning
+        path: '/autogentraning', //Страница аутогенной тренировки 
+        component: AutogenTraning,
+    },
+    {
+        path: '/freetesting', //Страница бесплатной тренировки - Сделана (Текст можно передавать через props, но там <br> и <p>. Не знаю пока как передавать такие программы)
+        component: FreeTesting,
+    },
+    {
+        path: '/readingcontroltext', //Страница чтения контрольного результата
+        component: ReadingСontrolText,
+    },
+    {
+        path: '/questionsabouttext', //Страница с вопросами
+        component: QuestionsAboutText,
     }
 ];
 

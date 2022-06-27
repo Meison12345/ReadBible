@@ -27,50 +27,15 @@
                                 настроить внимание</div>
                             <div class="wrap-quote-2 text-center">
                                 <div class="quote-2">Сравнительные исследования показали, что аутогенная тренировка
-                                    <span>повышает эффективность обучения на 40%</span></div>
+                                    <span>повышает эффективность обучения на 40%</span>
+                                </div>
                             </div>
                             <div class="test-desc ">
                                 <b>Аутогенная тренировка</b> — метод психофизической саморегуляции, призванный настроить
                                 вашу вегетативную нервную систему. 16-минутная аудиозапись поможет сосредоточить
                                 внимание, расслабить нервы и приведёт вас в эффективное эмоциональное состояние.
                             </div>
-                            <div class="audio-box">
-                                <div class="audio-box_title">Для полного погружения <b>воспользуйтесь наушниками</b>
-                                </div>
-                                <div class="text-center">
-                                    <a href="#" class="btn-audio btn-1 hidden"> <span
-                                            class="icon-play"></span>Прослушать</a>
-
-                                    <div class="audio-box-content active">
-                                        <div class="nameFile">Аутогенная тренировка</div>
-                                        <div class="audioplayer">
-                                            <div class="audioplayer-nameFile">Аутогенная тренировка</div><audio
-                                                preload="auto" controls=""
-                                                style="width: 0px; height: 0px; visibility: hidden;">
-                                                <source src="audio/Tones and I - Dance Monkey_(mp3mob.net).mp3">
-                                            </audio>
-                                            <div class="audioplayer-playpause" title=""><a href="#"></a></div>
-                                            <div class="audioplayer-time audioplayer-time-current">00:00</div>
-                                            <div class="audioplayer-bar">
-                                                <div class="audioplayer-bar-loaded" style="width: 96.2445%;"></div>
-                                                <div class="audioplayer-bar-played"></div>
-                                            </div>
-                                            <div class="audioplayer-time audioplayer-time-duration">03:30</div>
-                                            <div class="audioplayer-volume">
-                                                <div class="audioplayer-volume-button" title=""><a href="#"></a></div>
-                                                <div class="audioplayer-volume-adjust">
-                                                    <div>
-                                                        <div style="width: 100%;"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="text-center"><a href="#" class="btn-2">Пропустить</a></div>
-                            </div>
-
+                            <audio-training :source="'audio/Tones and I - Dance Monkey_(mp3mob.net).mp3'" />
 
                         </div>
                     </div>

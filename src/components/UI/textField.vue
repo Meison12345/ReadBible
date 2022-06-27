@@ -96,11 +96,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// .custom-label:hover {
-//     pointer-events: none;
-//       cursor: pointer;
-// }
-
 .custom-label {
     cursor: pointer;
 }
