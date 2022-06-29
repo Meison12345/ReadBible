@@ -12,6 +12,7 @@ import audioTraining from '@/components/UI/audioTraining';
 import timeWatcher from '@/components/UI/timeWatcher';
 import questionAnswer from '@/components/UI/questionAnswer';
 
+
 export default [
     inputWide,
     inputRadio,

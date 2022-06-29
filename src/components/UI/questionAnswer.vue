@@ -1,6 +1,6 @@
 <template>
     <div class="answers-box_row">
-        <div class="answers-box_title">В какой период собирают зверобой?
+        <div class="answers-box_title">{{ question }}
             <span class="number-row">10</span>
         </div>
         <label class="radio-input ">
@@ -8,7 +8,15 @@
             <span class="radio-icon"></span>
             <span class="radio-text">Летнего солнцестояния </span>
         </label>
-        <label class="radio-input ">
+
+        <label class="radio-input" v-for="el in obj" :key="el">
+            <input type="radio" name="answers-10">
+            <span class="radio-icon"></span>
+            <span class="radio-text">{{ el }}</span>
+        </label>
+
+
+        <!-- <label class="radio-input ">
             <input type="radio" name="answers-10">
             <span class="radio-icon"></span>
             <span class="radio-text">Созревания плодов </span>
@@ -22,7 +30,7 @@
             <input type="radio" name="answers-10">
             <span class="radio-icon"></span>
             <span class="radio-text">Ивана-Купала </span>
-        </label>
+        </label> -->
     </div>
 </template>
 
@@ -33,10 +41,19 @@ export default {
         modelValue: {
             type: String
         },
+        question: {
+            type: String,
+        },
+        correctAnswer: {
+            type: String,
+        }
     },
     data() {
         return {
-
+            obj: {
+                a: '123123',
+                b: '1231231214'
+            }
         }
     },
     methods: {

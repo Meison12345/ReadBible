@@ -93,13 +93,6 @@ export default {
             default: 0,
         },
     },
-    // methods: {
-    // checkPersent() {
-    //     const ProgressBarPersent = (this.nowLesson * this.maxRadius) / this.maxLesson;
-    //     console.log(this.strokeDasharrayValue);
-    //     this.strokeDasharrayValue = `${ProgressBarPersent} 502.4 `
-    // }
-    // },
     mounted() {
         const ProgressBarPersent = (this.nowLesson * this.maxRadius) / this.maxLesson;
         this.strokeDasharrayValue = `${ProgressBarPersent} 502.4 `

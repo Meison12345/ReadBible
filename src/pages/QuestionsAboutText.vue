@@ -21,7 +21,7 @@
                         <div class="answers-box">
                             <form action="#">
 
-                                <question-answer />
+                                <question-answer question="В какой период собирают зверобой?" correctAnswer="2" />
 
                                 <div class="answers-box_row">
                                     <!-- <input type="submit" class="btn-1" value="Отправить ответы"> -->

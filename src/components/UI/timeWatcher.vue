@@ -2,10 +2,11 @@
 <template>
     <span>{{ helpmin }}{{ min }}</span>
     <span>:</span>
-    <span>{{ helpsec }}{{ sec }}</span>
+    <span>{{ helpsec }}{{ globalSecond }}</span>
 </template>
 
 <script>
+import {ref} from 'vue';
 export default {
     name: 'time-watcher',
     data() {
@@ -37,8 +38,11 @@ export default {
                 }
             }
         }, 1000);
-
     },
+    setup(){
+        const globalSecond = ref(0);
+        return {globalSecond};
+    }
 
 }
 </script>

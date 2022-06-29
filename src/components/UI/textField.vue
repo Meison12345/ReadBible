@@ -70,13 +70,11 @@ export default {
             this.$emit('update:modelValue', event.currentTarget.value);
         },
         changePosition() {
-            console.log(123);
             document.querySelector('textarea').focus()
         }
     },
     watch: {
         'isFocused': function (value) {
-            // console.log(this.$el.parentNode.querySelector('.wrap-input div.label'));
             if (value)
                 this.isActive = true;
             else if (!value && this.inputValue == '')
@@ -84,12 +82,6 @@ export default {
             if (this.inputValue.trim().length > 0) {
                 this.isActive = true;
             }
-            // 'isFocused': function (value) {
-            // if (value)
-            //     this.$el.parentNode.querySelector('.wrap-input div.label').classList.add('active');
-            // else if (!value && this.inputValue == '')
-            //     this.$el.parentNode.querySelector('.wrap-input div.label').classList.remove('active');
-            // }
         },
     },
 }

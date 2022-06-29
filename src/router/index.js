@@ -15,6 +15,10 @@ import AutogenTraning from '@/pages/AutogenTraning';
 import FreeTesting from '@/pages/FreeTesting';
 import ReadingСontrolText from '@/pages/ReadingСontrolText';
 import QuestionsAboutText from '@/pages/QuestionsAboutText';
+import ReadResult from '@/pages/ReadResult';
+import notFound from '@/pages/notFound';
+
+
 
 const routes = [{
         path: '/',
@@ -57,7 +61,7 @@ const routes = [{
         component: AutogenTraning,
     },
     {
-        path: '/freetesting', //Страница бесплатной тренировки - Сделана (Текст можно передавать через props, но там <br> и <p>. Не знаю пока как передавать такие программы)
+        path: '/freetesting', //Страница бесплатной тренировки - Сделана (Текст можно передавать через props, но там <br> и <p>. Не знаю пока как передавать такие вещи)
         component: FreeTesting,
     },
     {
@@ -67,7 +71,17 @@ const routes = [{
     {
         path: '/questionsabouttext', //Страница с вопросами
         component: QuestionsAboutText,
-    }
+    },
+    {
+        path: '/readresult', //Страница результатами тестирования
+        component: ReadResult,
+    },
+    {
+        path: '/:pathMatch(.*)*',
+        name: 'notFound',
+        component: notFound
+    },
+
 ];
 
 const router = createRouter({

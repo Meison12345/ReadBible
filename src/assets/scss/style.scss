@@ -18,6 +18,10 @@ html {
     box-sizing: border-box;
 }
 
+:root {
+    --height-anim: 100px;
+}
+
 body {
     position: relative;
     font-size: $font-size;
@@ -3232,6 +3236,14 @@ section.section-3 div.table-programs form.ms2_form>div.table-title {
     line-height: 1.5;
 }
 
+.audioplayer-nameFile {
+    position: absolute;
+    font-size: 10px;
+    color: #8CA1AC;
+    top: 7px;
+    left: 115px;
+}
+
 .audio-box {
     &_title {
         margin: 0 auto 60px;
@@ -3352,6 +3364,14 @@ section.section-3 div.table-programs form.ms2_form>div.table-title {
 
 .audioplayer-time-current {
     margin-left: 12px;
+}
+
+.audioplayer-playing .audioplayer-playpause a {
+    content: '';
+    display: flex;
+    justify-content: space-between;
+    width: 12px;
+    height: 14px;
 }
 
 .audioplayer-bar-played::after {

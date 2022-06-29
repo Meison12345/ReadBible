@@ -1,7 +1,6 @@
 <template>
     <!--Страница аутогенной тренировки  -->
     <div class="main-tests">
-
         <section class="section-5">
             <div class="container-4">
                 <div class="container">
@@ -35,18 +34,16 @@
                                 вашу вегетативную нервную систему. 16-минутная аудиозапись поможет сосредоточить
                                 внимание, расслабить нервы и приведёт вас в эффективное эмоциональное состояние.
                             </div>
-                            <audio-training :source="'audio/Tones and I - Dance Monkey_(mp3mob.net).mp3'" />
+
+                            <audio-training :source="'/media/test.7c2082db.mp3'" />
 
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
-
-
-
     </div>
+
 </template>
 
 <script>
